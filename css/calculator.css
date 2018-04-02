@@ -2,14 +2,14 @@
     border: 1px solid black;
 }
 
-div#buttons {
+#buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 5px;
 }
 
-button.active {
+.active {
     padding: 10px;
 }
 
