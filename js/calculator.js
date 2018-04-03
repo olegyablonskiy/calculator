@@ -1,6 +1,6 @@
 const display = document.getElementById("display");
 
-document.querySelectorAll(".caclBtn")
+document.querySelectorAll(".calcBtn")
     .forEach(function(el) {
         el.addEventListener('click', function(){
             math(el.value);
@@ -10,7 +10,12 @@ document.querySelectorAll(".caclBtn")
 function math(val) {
     display.value += val;
 }
+
 function getResult() {
     const result = eval(display.value);
     display.value = result;
+}
+
+function displayAc() {
+        display.value = "";
 }
